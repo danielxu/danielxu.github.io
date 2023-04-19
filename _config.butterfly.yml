@@ -587,9 +587,9 @@ google_adsense:
 
 # Insert ads manually (手動插入廣告)
 ad:
-  # index: <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9701118103606093" data-ad-slot="9644331746"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
-  # aside: <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="9701118103606093" data-ad-client="ca-pub-9701118103606093" data-ad-slot="9701118103606093"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
-  post: <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9701118103606093" data-ad-slot="2399394402" data-ad-format="auto" data-full-width-responsive="true"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+  index: <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9701118103606093" data-ad-slot="2399394402" data-ad-format="auto" data-full-width-responsive="true"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+  aside: 
+  post: <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9701118103606093" data-ad-slot="9644331746"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
 
 # Verification (站長驗證)
 # --------------------------------------
