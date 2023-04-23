@@ -276,4 +276,104 @@ sitemap: false
 ---
 ```
 
+## 生成 rss
+
+[hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) 是默认生成网站 rss 的插件。
+
+**安装**
+
+```bash
+$ npm install hexo-generator-feed --save
+```
+
+支持的版本：
+- Hexo 4+: 2.x
+- Hexo 3: 1.x
+- Hexo 2: 0.x
+
+## Use
+
+In the [front-matter](https://hexo.io/docs/front-matter.html) of your post, 
+在模版文件里增加`description`, `intro` or `excerpt`配置：
+```markdown
+---
+title: {{ title }}
+date: {{ date }}
+tags:
+categories:
+keywords:
+description:
+intro:
+excerpt:
+top_img:
+cover:
+comments: false
+sitemap: false
+---
+``` 
+> 不配置，摘要将默认为摘要或文章的前140个字符。
+
+**配置**
+
+在 `_config.yml`添加配置：
+
+```yaml
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
+```
+- **enable** - 是否开启. 默认开启。
+- **type** - feed类型. `atom` or `rss2`. Specify `['atom', 'rss2']` to output both types. (Default: `atom`)
+  * Example:
+  ``` yaml
+  feed:
+    # Generate atom feed
+    type: atom
+
+    # Generate both atom and rss2 feeds
+    type:
+      - atom
+      - rss2
+    path:
+      - atom.xml
+      - rss2.xml
+  ```
+- **path** - Feed path. When both types are specified, path must follow the order of type value. (Default: atom.xml/rss2.xml)
+- **limit** - Maximum number of posts in the feed (Use `0` or `false` to show all posts)
+- **hub** - URL of the PubSubHubbub hubs (Leave it empty if you don't use it)
+- **content** - (optional) set to 'true' to include the contents of the entire post in the feed.
+- **content_limit** - (optional) Default length of post content used in summary. Only used, if **content** setting is false and no custom post description present.
+- **content_limit_delim** - (optional) If **content_limit** is used to shorten post contents, only cut at the last occurrence of this delimiter before reaching the character limit. Not used by default.
+- **order_by** - Feed order-by. (Default: -date)
+- **icon** - (optional) Custom feed icon. Defaults to a gravatar of email specified in the main config.
+- **autodiscovery** - Add feed [autodiscovery](https://www.rssboard.org/rss-autodiscovery). (Default: `true`)
+  * Many themes already offer this feature, so you may also need to adjust the theme's config if you wish to disable it.
+- **template** - Custom template path(s). This file will be used to generate feed xml file, see the default templates: [atom.xml](atom.xml) and [rss2.xml](rss2.xml).
+  * It is possible to specify just one custom template, even when this plugin is configured to output both feed types,
+  ``` yaml
+  # (Optional) Exclude custom template from being copied into public/ folder
+  # Alternatively, you could also prepend an underscore to its filename, e.g. _custom.xml
+  # https://hexo.io/docs/configuration#Include-Exclude-Files-or-Folders
+  exclude:
+    - 'custom.xml'
+  feed:
+    type:
+      - atom
+      - rss2
+    template:
+      - ./source/custom.xml
+    # atom will be generated using custom.xml
+    # rss2 will be generated using the default template instead
+  ```
+
 然后再执行 hexo 的生成和部署，等待一会儿，再看效果。
