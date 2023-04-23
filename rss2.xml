@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>CoreXDY&#39;S Ben</title>
+    <link>https://danielxu.github.io/</link>
+    
+    <image>
+      <url>https://danielxu.github.io/icon.png</url>
+      <title>CoreXDY&#39;S Ben</title>
+      <link>https://danielxu.github.io/</link>
+    </image>
+    
+    <atom:link href="https://danielxu.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description></description>
+    <pubDate>Sun, 23 Apr 2023 02:44:50 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>小米平台检测APP自启动行为审核被拒绝</title>
+      <link>https://danielxu.github.io/2023/04/23/Xiaomi-platform-detected-APP-self-startup-behavior-audit-was-rejected/</link>
+      <guid>https://danielxu.github.io/2023/04/23/Xiaomi-platform-detected-APP-self-startup-behavior-audit-was-rejected/</guid>
+      <pubDate>Sun, 23 Apr 2023 02:02:23 GMT</pubDate>
+      
+      <description>小米平台检测APP自启动行为审核被拒绝</description>
+      
+      
+      
+      
+      <category domain="https://danielxu.github.io/categories/android/">android</category>
+      
+      
+      <category domain="https://danielxu.github.io/tags/android/">android</category>
+      
+      <category domain="https://danielxu.github.io/tags/%E8%87%AA%E5%90%AF%E5%8A%A8/">自启动</category>
+      
+      
+    </item>
+    
+    <item>
+      <title>在 macOS Ventura 13.3.1 for M2 芯片上搭建基于 github Pages的博客系统</title>
+      <link>https://danielxu.github.io/2023/04/19/A-blog-system-based-on-github-Pages-was-built-on-macOS-Ventura-13-3-1-for-M2-chip/</link>
+      <guid>https://danielxu.github.io/2023/04/19/A-blog-system-based-on-github-Pages-was-built-on-macOS-Ventura-13-3-1-for-M2-chip/</guid>
+      <pubDate>Wed, 19 Apr 2023 06:00:16 GMT</pubDate>
+      
+      <description>在 macOS Ventura 13.3.1 for M2 芯片上搭建基于 github Pages的博客系统</description>
+      
+      
+      
+      
+      <category domain="https://danielxu.github.io/categories/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      
+      <category domain="https://danielxu.github.io/tags/%E6%95%99%E7%A8%8B/">教程</category>
+      
+      <category domain="https://danielxu.github.io/tags/Hexo/">Hexo</category>
+      
+      <category domain="https://danielxu.github.io/tags/macOS/">macOS</category>
+      
+      <category domain="https://danielxu.github.io/tags/Venturan/">Venturan</category>
+      
+      <category domain="https://danielxu.github.io/tags/M2-Pro/">M2 Pro</category>
+      
+      <category domain="https://danielxu.github.io/tags/github/">github</category>
+      
+      <category domain="https://danielxu.github.io/tags/pages/">pages</category>
+      
+      
+    </item>
+    
+  </channel>
+</rss>

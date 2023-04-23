@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>CoreXDY&#39;S Ben</title>
+  <icon>https://danielxu.github.io/icon.png</icon>
+  
+  <link href="https://danielxu.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://danielxu.github.io/"/>
+  <updated>2023-04-23T02:44:50.517Z</updated>
+  <id>https://danielxu.github.io/</id>
+  
+  <author>
+    <name>CoreXDY</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小米平台检测APP自启动行为审核被拒绝</title>
+    <link href="https://danielxu.github.io/2023/04/23/Xiaomi-platform-detected-APP-self-startup-behavior-audit-was-rejected/"/>
+    <id>https://danielxu.github.io/2023/04/23/Xiaomi-platform-detected-APP-self-startup-behavior-audit-was-rejected/</id>
+    <published>2023-04-23T02:02:23.000Z</published>
+    <updated>2023-04-23T02:44:50.517Z</updated>
+    
+    
+    <summary type="html">小米平台检测APP自启动行为审核被拒绝</summary>
+    
+    
+    
+    <category term="android" scheme="https://danielxu.github.io/categories/android/"/>
+    
+    
+    <category term="android" scheme="https://danielxu.github.io/tags/android/"/>
+    
+    <category term="自启动" scheme="https://danielxu.github.io/tags/%E8%87%AA%E5%90%AF%E5%8A%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 macOS Ventura 13.3.1 for M2 芯片上搭建基于 github Pages的博客系统</title>
+    <link href="https://danielxu.github.io/2023/04/19/A-blog-system-based-on-github-Pages-was-built-on-macOS-Ventura-13-3-1-for-M2-chip/"/>
+    <id>https://danielxu.github.io/2023/04/19/A-blog-system-based-on-github-Pages-was-built-on-macOS-Ventura-13-3-1-for-M2-chip/</id>
+    <published>2023-04-19T06:00:16.000Z</published>
+    <updated>2023-04-23T03:48:49.162Z</updated>
+    
+    
+    <summary type="html">在 macOS Ventura 13.3.1 for M2 芯片上搭建基于 github Pages的博客系统</summary>
+    
+    
+    
+    <category term="教程" scheme="https://danielxu.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="教程" scheme="https://danielxu.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="Hexo" scheme="https://danielxu.github.io/tags/Hexo/"/>
+    
+    <category term="macOS" scheme="https://danielxu.github.io/tags/macOS/"/>
+    
+    <category term="Venturan" scheme="https://danielxu.github.io/tags/Venturan/"/>
+    
+    <category term="M2 Pro" scheme="https://danielxu.github.io/tags/M2-Pro/"/>
+    
+    <category term="github" scheme="https://danielxu.github.io/tags/github/"/>
+    
+    <category term="pages" scheme="https://danielxu.github.io/tags/pages/"/>
+    
+  </entry>
+  
+</feed>
