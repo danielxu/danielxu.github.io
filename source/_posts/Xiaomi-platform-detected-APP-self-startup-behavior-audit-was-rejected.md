@@ -10,6 +10,7 @@ keywords: 'android,xiaomi,自启动'
 description: 小米平台检测APP自启动行为审核被拒绝
 top_img:
 cover:
+sitemap: false
 ---
 
 {% note blue 'fas fa-bullhorn' %}

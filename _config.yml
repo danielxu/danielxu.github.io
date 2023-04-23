@@ -108,3 +108,14 @@ deploy:
   branch: gh-pages
   ignore_hidden: false # default is true
   ignore_pattern: regexp
+
+# sitemap
+sitemap:
+  path: 
+    - sitemap.xml
+    - sitemap.txt
+  template: ./sitemap_template.xml
+  template_txt: ./sitemap_template.txt
+  rel: false
+  tags: true
+  categories: true

@@ -17,6 +17,7 @@ description: 在 macOS Ventura 13.3.1 for M2 芯片上搭建基于 github Pages�
 top_img:
 cover:
 sticky: 100
+sitemap: false
 ---
 
 {% note blue 'fas fa-bullhorn' %}
@@ -165,5 +166,114 @@ avatar:
 ```
 
 > 具体关于主题的设置，直接看主题的文档吧，[butterfly](https://butterfly.js.org/posts/21cfbf15/)
+
+## sitemap
+
+[hexo-generator-sitemap](https://github.com/hexojs/hexo-generator-sitemap) 是默认生成网站 sitemap 的插件。
+
+**安装**
+
+```bash
+npm install hexo-generator-sitemap --save
+```
+支持版本：
+* Hexo 4: 2.x
+* Hexo 3: 1.x
+* Hexo 2: 0.x
+
+**配置**
+
+在 `_config.yml`添加配置：
+```yaml
+sitemap:
+  path: 
+    - sitemap.xml
+    - sitemap.txt
+  template: ./sitemap_template.xml
+  template_txt: ./sitemap_template.txt
+  rel: false
+  tags: true
+  categories: true
+```
+
+* path - Sitemap 路径，默认sitemap.xml
+* template - 生成 sitemap.xml 的模版
+* template_txt - 生成 sitemap.txt 的模版
+* rel - Add rel-sitemap to the site's header. (Default: false)
+* tags - Add site's tags
+* categories - Add site's categories
+
+创建2个模版文件：
+
+`sitemap_template.xml`
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for post in posts %}
+  <url>
+    <loc>{{ post.permalink | uriencode }}</loc>
+    {% if post.updated %}
+    <lastmod>{{ post.updated | formatDate }}</lastmod>
+    {% elif post.date %}
+    <lastmod>{{ post.date | formatDate }}</lastmod>
+    {% endif %}
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {% endfor %}
+
+  <url>
+    <loc>{{ config.url | uriencode }}</loc>
+    <lastmod>{{ sNow | formatDate }}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  {% for tag in tags %}
+  <url>
+    <loc>{{ tag.permalink | uriencode }}</loc>
+    <lastmod>{{ sNow | formatDate }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  {% endfor %}
+
+  {% for cat in categories %}
+  <url>
+    <loc>{{ cat.permalink | uriencode }}</loc>
+    <lastmod>{{ sNow | formatDate }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  {% endfor %}
+</urlset>
+```
+
+`sitemap_template.txt`
+```txt
+{% for post in posts %}{{ post.permalink | uriencode }}
+{% endfor %}{{ config.url | uriencode }}
+{% for tag in tags %}{{ tag.permalink | uriencode }}
+{% endfor %}{% for cat in categories %}{{ cat.permalink | uriencode }}
+{% endfor %}
+```
+
+排除生成 sitemap 配置：
+
+Add sitemap: false to the post/page's front matter.
+```markdown
+---
+title: {{ title }}
+date: {{ date }}
+tags:
+categories:
+keywords:
+description:
+top_img:
+cover:
+comments: false
+sitemap: false
+---
+```
 
 然后再执行 hexo 的生成和部署，等待一会儿，再看效果。
