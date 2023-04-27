@@ -15,8 +15,31 @@
     <atom:link href="https://danielxu.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sun, 23 Apr 2023 02:44:50 GMT</pubDate>
+    <pubDate>Thu, 27 Apr 2023 07:31:00 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>本地运行 Stable Diffusion（SD）来文生图</title>
+      <link>https://danielxu.github.io/2023/04/27/Run-Stable-Diffusion-locally/</link>
+      <guid>https://danielxu.github.io/2023/04/27/Run-Stable-Diffusion-locally/</guid>
+      <pubDate>Thu, 27 Apr 2023 06:09:40 GMT</pubDate>
+      
+      <description>本地搭建 Stable Diffusion，通过 stable-diffusion-webui 进行文生图</description>
+      
+      
+      
+      
+      <category domain="https://danielxu.github.io/categories/SD/">SD</category>
+      
+      
+      <category domain="https://danielxu.github.io/tags/M2-Pro/">M2 Pro</category>
+      
+      <category domain="https://danielxu.github.io/tags/SD/">SD</category>
+      
+      <category domain="https://danielxu.github.io/tags/python/">python</category>
+      
+      
+    </item>
     
     <item>
       <title>小米平台检测APP自启动行为审核被拒绝</title>

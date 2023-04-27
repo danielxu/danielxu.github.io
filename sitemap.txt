@@ -11,6 +11,9 @@ https://danielxu.github.io/tags/github/
 https://danielxu.github.io/tags/pages/
 https://danielxu.github.io/tags/android/
 https://danielxu.github.io/tags/%E8%87%AA%E5%90%AF%E5%8A%A8/
+https://danielxu.github.io/tags/SD/
+https://danielxu.github.io/tags/python/
 https://danielxu.github.io/categories/%E6%95%99%E7%A8%8B/
 https://danielxu.github.io/categories/android/
+https://danielxu.github.io/categories/SD/
 
