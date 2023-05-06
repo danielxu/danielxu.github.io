@@ -565,8 +565,7 @@ baidu_analytics:
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
-google_analytics: 
-# UA-46463126-1
+google_analytics: G-QSP9BP49YG
 
 # Cloudflare Analytics
 # https://www.cloudflare.com/zh-tw/web-analytics/
